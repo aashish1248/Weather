@@ -1,9 +1,18 @@
 #city-input, #weather-output {
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto;
+  border-radius: 25px;
+}
+
+#result {
+  border-radius: 25px;
 }
 
 .banner {
-  color: #FFD23F;
+  color: #327800;
   font-family: sans-serif;
+}
+
+body {
+  background-color: #92f692;
 }

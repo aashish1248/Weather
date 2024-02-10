@@ -1,5 +1,12 @@
 let API_KEY = "a8e71c9932b20c4ceb0aed183e6a83bb";
 
+document.addEventListener('keydown', function(event) {
+  const key = event.key;
+  if (key == 'Enter') {
+    searchCity()
+  }
+})
+
 getWeatherData = (city) => {
   const URL = "https://api.openweathermap.org/data/2.5/weather";
   fetch(`${URL}?q=${city}&appid=${API_KEY}&units=metric`)
